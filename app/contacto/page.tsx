@@ -18,8 +18,8 @@ export default function ContactoPage() {
         eyebrow="Contacto"
         title="Solicita una cotización con medidas, material o plano de referencia."
         text="Indícanos el material, cantidad, presentación, urgencia y cualquier especificación para darte una respuesta más precisa."
-        mobileImage="/images/hero/page-contacto-mobile.webp"
         image="/images/hero/page-contacto.webp"
+        mobileImage="/images/hero/page-contacto-mobile.webp"
       />
 
       <section className="section contact-section">

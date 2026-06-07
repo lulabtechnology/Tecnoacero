@@ -26,8 +26,8 @@ export default function NosotrosPage() {
         eyebrow="Nosotros"
         title="Una empresa panameña enfocada en fortalecer la industria con acero de calidad."
         text="Comercializamos materiales ferrosos y no ferrosos para la industria metalmecánica y sectores afines, con servicio técnico, rapidez y atención personalizada."
-        mobileImage="/images/hero/page-nosotros-mobile.webp"
         image="/images/hero/page-nosotros.webp"
+        mobileImage="/images/hero/page-nosotros-mobile.webp"
         size="small"
       />
 

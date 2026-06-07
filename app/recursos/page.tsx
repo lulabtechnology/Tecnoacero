@@ -19,8 +19,8 @@ export default function RecursosPage() {
         eyebrow="Recursos"
         title="Catálogo descargable e información técnica organizada por material."
         text="Descarga el catálogo comercial y consulta información técnica organizada para apoyar la selección de materiales industriales."
-        mobileImage="/images/hero/page-recursos-mobile.webp"
         image="/images/hero/page-recursos.webp"
+        mobileImage="/images/hero/page-recursos-mobile.webp"
       />
 
       <section className="section">

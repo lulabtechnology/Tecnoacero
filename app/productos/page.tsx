@@ -36,8 +36,8 @@ export default function ProductosPage() {
         eyebrow="Productos"
         title="Materiales industriales organizados por línea, aplicación y ficha técnica."
         text="Encuentra información clara sobre presentaciones, propiedades, aplicaciones y valores de referencia para cotizar con mayor precisión."
-        mobileImage="/images/hero/page-productos-mobile.webp"
         image="/images/hero/page-productos.webp"
+        mobileImage="/images/hero/page-productos-mobile.webp"
       />
       <section className="section product-signal-section">
         <div className="container">

@@ -27,8 +27,8 @@ export default function ProyectosPage() {
         eyebrow="Proyectos y aplicaciones"
         title="Materiales preparados para sectores que no pueden detener su operación."
         text="Soluciones para talleres, constructoras, sector marítimo, mantenimiento, agroindustria y empresas que requieren materiales confiables para operar sin interrupciones."
-        mobileImage="/images/hero/page-proyectos-mobile.webp"
         image="/images/hero/page-proyectos.webp"
+        mobileImage="/images/hero/page-proyectos-mobile.webp"
       />
 
       <section className="section">
