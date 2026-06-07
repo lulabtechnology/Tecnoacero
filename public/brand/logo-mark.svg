@@ -1,0 +1,6 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00c875"/><stop offset="1" stop-color="#00643d"/></linearGradient><pattern id="diamond" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><rect width="16" height="16" fill="#334143"/><ellipse cx="8" cy="8" rx="2.5" ry="6" fill="#8d9a9b" opacity=".75"/></pattern></defs>
+<path d="M18 12h104v78c0 25-12 40-52 56-40-16-52-31-52-56V12Z" fill="url(#g)" stroke="#0af096" stroke-width="4"/>
+<path d="M40 45h54v17H77v56H58V62H40V45Z" fill="#fff"/>
+<path d="M88 118 115 43h26l28 75h-24l-5-14h-29l-5 14H88Zm32-32h16l-8-26-8 26Z" fill="url(#diamond)" stroke="#dce3e2" stroke-width="2" transform="translate(-15 0)"/>
+</svg>
