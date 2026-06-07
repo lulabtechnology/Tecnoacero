@@ -19,8 +19,7 @@ type PageHeroProps = {
 export function PageHero({ eyebrow, title, text, image, mobileImage, size = "default", children, className = "" }: PageHeroProps) {
   const ref = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "18%"]);
-  const copyY = useTransform(scrollYProgress, [0, 1], ["0%", "-12%"]);
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "7%"]);
 
   return (
     <section ref={ref} className={`page-hero ${size === "small" ? "small" : ""} ${className}`.trim()}>
@@ -29,8 +28,13 @@ export function PageHero({ eyebrow, title, text, image, mobileImage, size = "def
         {mobileImage && <Image src={mobileImage} alt="" fill priority className="page-hero-bg page-hero-bg-mobile" sizes="100vw" />}
       </motion.div>
       <div className="page-hero-overlay" />
-      <div className="container">
-        <motion.div className="page-hero-copy" style={{ y: copyY }}>
+      <div className="container page-hero-content">
+        <motion.div
+          className="page-hero-copy"
+          initial={{ opacity: 0, y: 28, clipPath: "inset(0 0 18% 0)" }}
+          animate={{ opacity: 1, y: 0, clipPath: "inset(0 0 0% 0)" }}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+        >
           <span className="eyebrow">{eyebrow}</span>
           <h1>{title}</h1>
           <p>{text}</p>

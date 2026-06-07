@@ -18,7 +18,8 @@ export default function RecursosPage() {
       <PageHero
         eyebrow="Recursos"
         title="Catálogo descargable e información técnica organizada por material."
-        text="Solo el catálogo comercial queda como descarga pública. Las fichas técnicas fueron convertidas en páginas informativas para cada material."
+        text="Descarga el catálogo comercial y consulta información técnica organizada para apoyar la selección de materiales industriales."
+        mobileImage="/images/hero/page-recursos-mobile.webp"
         image="/images/hero/page-recursos.webp"
       />
 
@@ -34,10 +35,10 @@ export default function RecursosPage() {
           <Reveal className="resource-info" direction="right">
             <SectionHeading
               eyebrow="Fichas técnicas"
-              title="Información visible en la web, no como descarga."
-              text="Cada material tiene su propia página con aplicaciones, propiedades, presentaciones, valores de referencia y composición cuando aplica. Esto cumple la indicación del cliente de usar las fichas solo como información."
+              title="Información técnica organizada por producto."
+              text="Cada material cuenta con una página propia con aplicaciones, propiedades, presentaciones, valores de referencia y composición cuando aplica."
             />
-            <div className="resource-note"><ShieldCheck size={20} /> El visitante navega la información técnica sin descargar PDFs internos.</div>
+            <div className="resource-note"><ShieldCheck size={20} /> La información técnica está presentada de forma clara para facilitar la consulta y la cotización.</div>
           </Reveal>
         </div>
       </section>

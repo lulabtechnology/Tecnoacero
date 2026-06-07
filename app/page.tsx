@@ -28,7 +28,7 @@ export default function Home() {
       <section className="section about-snapshot">
         <div className="container split-grid">
           <Reveal className="image-stack" direction="left">
-            <Image src="/images/sections/bodega-industrial.webp" alt="Inventario industrial Tecno Acero" width={760} height={620} />
+            <Image src="/images/sections/bodega-industrial-wow.webp" alt="Inventario industrial Tecno Acero" width={760} height={620} />
             <div className="floating-card">
               <strong>Solución completa</strong>
               <span>Material · Corte · Asesoría · Entrega</span>
@@ -90,7 +90,7 @@ export default function Home() {
               <SectionHeading
                 eyebrow="Líneas de producto"
                 title="Materiales técnicos organizados para cotizar con claridad."
-                text="El sitio convierte las fichas técnicas en información visible por material, sin hacer descargables los documentos técnicos. El único descargable público es el catálogo comercial."
+                text="Información técnica organizada para que cada visitante pueda revisar aplicaciones, propiedades y presentaciones antes de solicitar una cotización."
               />
             </Reveal>
             <Reveal direction="right" className="section-actions">
@@ -116,7 +116,7 @@ export default function Home() {
             </div>
           </Reveal>
           <Reveal className="industrial-panel" direction="right">
-            <Image src="/images/sections/aplicaciones-industriales.webp" alt="Aplicaciones industriales Tecno Acero" width={720} height={560} />
+            <Image src="/images/sections/aplicaciones-industriales-wow.webp" alt="Aplicaciones industriales Tecno Acero" width={720} height={560} />
           </Reveal>
         </div>
       </section>
@@ -125,12 +125,12 @@ export default function Home() {
         <div className="container technical-inner">
           <Reveal>
             <span className="eyebrow">Información técnica</span>
-            <h2>Fichas técnicas convertidas en contenido web por material.</h2>
-            <p>El visitante puede revisar aplicaciones, propiedades, presentaciones, valores de referencia y composición sin descargar documentos internos.</p>
+            <h2>Información técnica clara para cada material.</h2>
+            <p>Consulta aplicaciones, propiedades, presentaciones, valores de referencia y composición para tomar mejores decisiones de compra.</p>
           </Reveal>
           <Reveal direction="right" className="technical-card">
             <strong>Catálogo público</strong>
-            <p>El catálogo comercial queda disponible para descarga directa, como indicó el cliente.</p>
+            <p>Documento comercial con las principales líneas de producto de Tecno Acero Panamá.</p>
             <a href="/docs/catalogo-tecno-acero.pdf" download className="btn btn-primary"><Download size={18} /> Descargar catálogo</a>
           </Reveal>
         </div>

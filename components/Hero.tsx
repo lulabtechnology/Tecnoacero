@@ -23,9 +23,9 @@ const heroSignals = [
 export function Hero() {
   const ref = useRef<HTMLElement | null>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "16%"]);
-  const panelY = useTransform(scrollYProgress, [0, 1], ["0%", "-10%"]);
-  const copyY = useTransform(scrollYProgress, [0, 1], ["0%", "-8%"]);
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "8%"]);
+  const panelY = useTransform(scrollYProgress, [0, 1], ["0%", "-5%"]);
+  const copyY = useTransform(scrollYProgress, [0, 1], ["0%", "-4%"]);
 
   return (
     <section className="hero-section" ref={ref}>

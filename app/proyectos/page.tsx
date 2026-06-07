@@ -26,7 +26,8 @@ export default function ProyectosPage() {
       <PageHero
         eyebrow="Proyectos y aplicaciones"
         title="Materiales preparados para sectores que no pueden detener su operación."
-        text="Más que mostrar fotografías no entregadas, esta sección organiza los usos reales por sector para que el visitante entienda rápidamente cómo Tecno Acero Panamá puede apoyarlo."
+        text="Soluciones para talleres, constructoras, sector marítimo, mantenimiento, agroindustria y empresas que requieren materiales confiables para operar sin interrupciones."
+        mobileImage="/images/hero/page-proyectos-mobile.webp"
         image="/images/hero/page-proyectos.webp"
       />
 
@@ -42,10 +43,10 @@ export default function ProyectosPage() {
           <Reveal className="content-stack" direction="right">
             <SectionHeading
               eyebrow="Enfoque comercial"
-              title="Una web institucional debe vender capacidad, orden y confianza."
+              title="Capacidad, orden y confianza para cada tipo de proyecto."
               text="Tecno Acero Panamá atiende desde solicitudes rápidas de talleres hasta necesidades de empresas industriales, constructoras, marítimas, agroindustriales y de mantenimiento."
             />
-            <p className="lead-box">Cuando el cliente envíe fotos recientes de productos, instalaciones y proyectos, esta sección ya queda lista para evolucionar a una galería real con casos destacados.</p>
+            <p className="lead-box">Desde solicitudes rápidas hasta proyectos planificados, el equipo puede orientar la compra según aplicación, medida, disponibilidad y exigencia del trabajo.</p>
           </Reveal>
         </div>
       </section>

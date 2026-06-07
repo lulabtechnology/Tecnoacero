@@ -64,6 +64,7 @@ export default function ServiciosPage() {
         eyebrow="Servicios"
         title="Soluciones industriales para comprar, cortar, preparar y recibir materiales con confianza."
         text="Un ecosistema comercial pensado para que el cliente encuentre material, reciba asesoría y avance con sus proyectos sin perder tiempo."
+        mobileImage="/images/hero/page-servicios-mobile.webp"
         image="/images/hero/page-servicios.webp"
       />
 

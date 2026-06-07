@@ -36,6 +36,7 @@ export default function ProductosPage() {
         eyebrow="Productos"
         title="Materiales industriales organizados por línea, aplicación y ficha técnica."
         text="Encuentra información clara sobre presentaciones, propiedades, aplicaciones y valores de referencia para cotizar con mayor precisión."
+        mobileImage="/images/hero/page-productos-mobile.webp"
         image="/images/hero/page-productos.webp"
       />
       <section className="section product-signal-section">
@@ -43,8 +44,8 @@ export default function ProductosPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Catálogo técnico en web"
-              title="Consulta la información de cada material sin descargar las fichas técnicas."
-              text="El único documento descargable público es el catálogo. Las fichas técnicas fueron transformadas en páginas de información por material para una experiencia más profesional."
+              title="Consulta aplicaciones, propiedades y presentaciones por material."
+              text="Cada línea cuenta con información ordenada para apoyar la selección del material y agilizar la solicitud de cotización."
             />
           </Reveal>
           <div className="product-signal-grid">
