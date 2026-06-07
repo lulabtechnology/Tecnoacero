@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Anchor, Building2, Factory, Hammer, Tractor, Wrench } from "lucide-react";
-import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
+import { SectionHeading } from "@/components/SectionHeading";
 import { CTA } from "@/components/CTA";
+import { PageHero } from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "Proyectos y aplicaciones industriales",
@@ -22,20 +23,17 @@ const sectors = [
 export default function ProyectosPage() {
   return (
     <>
-      <section className="page-hero">
-        <div className="container">
-          <Reveal>
-            <span className="eyebrow">Proyectos y aplicaciones</span>
-            <h1>Materiales preparados para sectores que no pueden detener su operación.</h1>
-            <p>Más que mostrar fotografías no entregadas, esta sección organiza los usos reales por sector para que el visitante entienda rápidamente cómo Tecno Acero Panamá puede apoyarlo.</p>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Proyectos y aplicaciones"
+        title="Materiales preparados para sectores que no pueden detener su operación."
+        text="Más que mostrar fotografías no entregadas, esta sección organiza los usos reales por sector para que el visitante entienda rápidamente cómo Tecno Acero Panamá puede apoyarlo."
+        image="/images/hero/page-proyectos.webp"
+      />
 
       <section className="section">
         <div className="container split-grid">
           <Reveal className="image-stack" direction="left">
-            <Image src="/images/sections/aplicaciones-industriales.webp" alt="Aplicaciones industriales" width={760} height={620} />
+            <Image src="/images/sections/aplicaciones-industriales-wow.webp" alt="Aplicaciones industriales" width={760} height={620} />
             <div className="floating-card">
               <strong>Aplicación correcta</strong>
               <span>Material seleccionado según exigencia del proyecto.</span>

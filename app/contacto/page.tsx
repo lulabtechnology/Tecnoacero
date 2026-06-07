@@ -3,6 +3,7 @@ import { Clock, Instagram, Mail, MapPin, MessageCircle, PhoneCall } from "lucide
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ContactForm } from "@/components/ContactForm";
+import { PageHero } from "@/components/PageHero";
 import { site, whatsappHref } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -13,15 +14,12 @@ export const metadata: Metadata = {
 export default function ContactoPage() {
   return (
     <>
-      <section className="page-hero">
-        <div className="container">
-          <Reveal>
-            <span className="eyebrow">Contacto</span>
-            <h1>Solicita una cotización con medidas, material o plano de referencia.</h1>
-            <p>Indícanos el material, cantidad, presentación, urgencia y cualquier especificación para darte una respuesta más precisa.</p>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Contacto"
+        title="Solicita una cotización con medidas, material o plano de referencia."
+        text="Indícanos el material, cantidad, presentación, urgencia y cualquier especificación para darte una respuesta más precisa."
+        image="/images/hero/page-contacto.webp"
+      />
 
       <section className="section contact-section">
         <div className="container contact-grid">

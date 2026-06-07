@@ -5,6 +5,7 @@ import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { CTA } from "@/components/CTA";
 import { productGroups } from "@/lib/materials";
+import { PageHero } from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "Recursos y catálogo",
@@ -14,15 +15,12 @@ export const metadata: Metadata = {
 export default function RecursosPage() {
   return (
     <>
-      <section className="page-hero">
-        <div className="container">
-          <Reveal>
-            <span className="eyebrow">Recursos</span>
-            <h1>Catálogo descargable e información técnica organizada por material.</h1>
-            <p>Solo el catálogo comercial queda como descarga pública. Las fichas técnicas fueron convertidas en páginas informativas para cada material.</p>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Recursos"
+        title="Catálogo descargable e información técnica organizada por material."
+        text="Solo el catálogo comercial queda como descarga pública. Las fichas técnicas fueron convertidas en páginas informativas para cada material."
+        image="/images/hero/page-recursos.webp"
+      />
 
       <section className="section">
         <div className="container resources-grid">

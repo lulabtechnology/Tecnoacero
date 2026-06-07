@@ -4,6 +4,7 @@ import { CheckCircle2, Gem, Handshake, Lightbulb, Shield, Users } from "lucide-r
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { CTA } from "@/components/CTA";
+import { PageHero } from "@/components/PageHero";
 
 export const metadata: Metadata = {
   title: "Nosotros",
@@ -21,15 +22,13 @@ const values = [
 export default function NosotrosPage() {
   return (
     <>
-      <section className="page-hero small">
-        <div className="container">
-          <Reveal>
-            <span className="eyebrow">Nosotros</span>
-            <h1>Una empresa panameña enfocada en fortalecer la industria con acero de calidad.</h1>
-            <p>Comercializamos materiales ferrosos y no ferrosos para la industria metalmecánica y sectores afines, con servicio técnico, rapidez y atención personalizada.</p>
-          </Reveal>
-        </div>
-      </section>
+      <PageHero
+        eyebrow="Nosotros"
+        title="Una empresa panameña enfocada en fortalecer la industria con acero de calidad."
+        text="Comercializamos materiales ferrosos y no ferrosos para la industria metalmecánica y sectores afines, con servicio técnico, rapidez y atención personalizada."
+        image="/images/hero/page-nosotros.webp"
+        size="small"
+      />
 
       <section className="section">
         <div className="container split-grid">
@@ -47,7 +46,7 @@ export default function NosotrosPage() {
             </div>
           </Reveal>
           <Reveal className="image-stack" direction="right">
-            <Image src="/images/sections/asesoria-tecnica.webp" alt="Asesoría técnica Tecno Acero" width={760} height={620} />
+            <Image src="/images/sections/asesoria-tecnica-wow.webp" alt="Asesoría técnica Tecno Acero" width={760} height={620} />
             <div className="floating-card floating-card-light">
               <strong>Atención técnica</strong>
               <span>Selección correcta del material según aplicación.</span>
