@@ -32,6 +32,7 @@ export function Footer() {
           <a href={`tel:${site.phones[0].replace(/[^0-9]/g, "")}`}><PhoneCall size={17} /> {site.phones.join(" / ")}</a>
           <a href={`mailto:${site.email}`}><Mail size={17} /> {site.email}</a>
           <span><Clock size={17} /> Lun. a vie. 8:00 a.m. - 5:00 p.m.</span>
+          <span><Clock size={17} /> Sáb. 8:00 a.m. - 12:00 p.m.</span>
           <a className="btn btn-primary footer-cta" href={whatsappHref()} target="_blank" rel="noreferrer">Cotizar por WhatsApp</a>
         </div>
       </div>
