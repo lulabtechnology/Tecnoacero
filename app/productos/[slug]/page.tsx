@@ -62,6 +62,22 @@ export default function MaterialPage({ params }: { params: { slug: string } }) {
                 {material.presentations.map((item) => <span key={item}><CheckCircle2 size={17} /> {item}</span>)}
               </div>
             </article>
+            {material.gallery && material.gallery.length > 0 && (
+              <article className="detail-card large">
+                <span>Galería visual</span>
+                <h2>Presentaciones relacionadas</h2>
+                <div className="material-gallery">
+                  {material.gallery.map((item) => (
+                    <figure className="gallery-item" key={item.src}>
+                      <div className="gallery-image">
+                        <Image src={item.src} alt={item.alt} fill sizes="(max-width: 900px) 100vw, 33vw" />
+                      </div>
+                      <figcaption>{item.label ?? item.alt}</figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </article>
+            )}
           </div>
           <aside className="material-side">
             <div className="spec-card">

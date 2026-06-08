@@ -212,8 +212,9 @@ button, input, textarea, select { font: inherit; }
 .hero-section {
   min-height: 100svh;
   position: relative;
-  display: block;
-  padding: 150px 0 72px;
+  display: flex;
+  align-items: center;
+  padding: 150px 0 44px;
   overflow: hidden;
 }
 .hero-bg { object-fit: cover; z-index: -3; }
@@ -262,7 +263,6 @@ h1, h2, h3, p { margin-top: 0; }
 }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
 .hero-panel {
-  align-self: stretch;
   border: 1px solid rgba(255,255,255,.14);
   border-radius: 30px;
   background: linear-gradient(145deg, rgba(11,21,25,.78), rgba(4,10,13,.62));
@@ -290,15 +290,14 @@ h1, h2, h3, p { margin-top: 0; }
 .panel-callout p { margin: 0; line-height: 1.55; }
 .panel-email { display: block; margin-top: 18px; color: var(--green-2); font-weight: 800; }
 .hero-badges {
-  position: relative;
-  left: auto;
-  bottom: auto;
-  transform: none;
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  transform: translateX(-50%);
   z-index: 3;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
-  margin-top: 26px;
 }
 .hero-badge {
   min-height: 88px;
@@ -584,6 +583,36 @@ h1, h2, h3, p { margin-top: 0; }
 .spec-card.uses { display: flex; flex-wrap: wrap; gap: 9px; }
 .spec-card.uses h3 { flex-basis: 100%; }
 
+.material-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.gallery-item {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  overflow: hidden;
+  background: rgba(255,255,255,.03);
+}
+.gallery-image {
+  position: relative;
+  min-height: 220px;
+}
+.gallery-image img {
+  object-fit: cover;
+}
+.gallery-item figcaption {
+  padding: 14px 16px 16px;
+  color: var(--muted);
+  line-height: 1.45;
+  font-size: 14px;
+  font-weight: 700;
+}
+.product-signal-grid-four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .service-detail-list { display: grid; gap: 28px; }
 .service-detail {
   display: grid;
@@ -711,6 +740,7 @@ h1, h2, h3, p { margin-top: 0; }
   .hero-badges { position: relative; left: auto; bottom: auto; transform: none; margin-top: 48px; grid-template-columns: 1fr 1fr 1fr; }
   .hero-section { display: block; padding-bottom: 76px; }
   .service-grid, .materials-grid, .resource-list { grid-template-columns: repeat(2, 1fr); }
+  .product-signal-grid-four { grid-template-columns: repeat(2, 1fr); }
   .values-grid { grid-template-columns: repeat(3, 1fr); }
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
   .material-detail-grid, .explorer-controls { grid-template-columns: 1fr; }
@@ -732,7 +762,7 @@ h1, h2, h3, p { margin-top: 0; }
   .hero-badges { grid-template-columns: 1fr; gap: 12px; margin-top: 34px; }
   .section-row { display: block; }
   .section-actions { margin-top: 22px; }
-  .service-grid, .materials-grid, .resource-list, .values-grid, .mission-grid, .footer-grid, .form-row.two { grid-template-columns: 1fr; }
+  .service-grid, .materials-grid, .resource-list, .values-grid, .mission-grid, .footer-grid, .form-row.two, .material-gallery, .product-signal-grid-four { grid-template-columns: 1fr; }
   .check-grid { grid-template-columns: 1fr; }
   .floating-card { position: relative; right: auto; bottom: auto; width: 100%; margin-top: -28px; }
   .cta-inner { grid-template-columns: 1fr; padding: 28px; }

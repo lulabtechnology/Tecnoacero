@@ -14,18 +14,23 @@ export const metadata: Metadata = {
 const families = [
   {
     title: "Aceros grado maquinaria",
-    text: "Barras redondas, cuadradas, hexagonales y materiales para piezas, repuestos y maquinado industrial.",
-    image: "/images/products/categoria-maquinaria-wow.webp",
+    text: "AISI 1018/1020, 1045, 4140, 4340, barra hueca ST52, hierro fundido y otras presentaciones para maquinado y repuestos.",
+    image: "/images/client-products/acero-aisi-4140.webp",
   },
   {
-    title: "Aleaciones, inoxidables y perfiles",
-    text: "Tubos, perfiles, aluminio, acero inoxidable y materiales con excelente presentación para aplicaciones industriales y estructurales.",
-    image: "/images/products/categoria-aleaciones-wow.webp",
+    title: "Aceros inoxidables",
+    text: "Barras, tubos, láminas, platinas y angulares inoxidables para ambientes con exigencia de corrosión y acabado técnico.",
+    image: "/images/client-products/inox-barra-304.webp",
   },
   {
-    title: "Materiales especiales",
-    text: "Bronces, nylon, teflón, discos abrasivos y productos para desgaste, fricción o aplicaciones técnicas específicas.",
-    image: "/images/products/categoria-especiales-wow.webp",
+    title: "Bronces y aleaciones no ferrosas",
+    text: "Bronce fosforoso, bronce maleable, bronce aluminio y otras opciones para bujes, cojinetes y piezas de fricción.",
+    image: "/images/client-products/bronce-aluminio.webp",
+  },
+  {
+    title: "Plásticos de ingeniería",
+    text: "Nylon y teflón PTFE en barras y láminas para aplicaciones de baja fricción, deslizamiento y mecanizado técnico.",
+    image: "/images/client-products/nylon-barra-negra.webp",
   },
 ];
 
@@ -36,8 +41,8 @@ export default function ProductosPage() {
         eyebrow="Productos"
         title="Materiales industriales organizados por línea, aplicación y ficha técnica."
         text="Encuentra información clara sobre presentaciones, propiedades, aplicaciones y valores de referencia para cotizar con mayor precisión."
-        image="/images/hero/page-productos.webp"
         mobileImage="/images/hero/page-productos-mobile.webp"
+        image="/images/hero/page-productos.webp"
       />
       <section className="section product-signal-section">
         <div className="container">
@@ -45,15 +50,15 @@ export default function ProductosPage() {
             <SectionHeading
               eyebrow="Catálogo técnico en web"
               title="Consulta aplicaciones, propiedades y presentaciones por material."
-              text="Cada línea cuenta con información ordenada para apoyar la selección del material y agilizar la solicitud de cotización."
+              text="Ahora la web integra imágenes reales de productos suministradas por Tecno Acero Panamá para reforzar la identidad del catálogo y mostrar mejor cada línea comercial."
             />
           </Reveal>
-          <div className="product-signal-grid">
+          <div className="product-signal-grid product-signal-grid-four">
             {families.map((family, index) => (
               <Reveal key={family.title} delay={index * 0.05}>
                 <article className="product-signal-card">
                   <div className="product-signal-media">
-                    <Image src={family.image} alt={family.title} fill sizes="(max-width: 900px) 100vw, 33vw" />
+                    <Image src={family.image} alt={family.title} fill sizes="(max-width: 900px) 100vw, 25vw" />
                   </div>
                   <div className="product-signal-copy">
                     <h3>{family.title}</h3>

@@ -10,6 +10,7 @@ export type Material = {
   presentations: string[];
   specs: { label: string; value: string }[];
   chemistry?: { label: string; value: string }[];
+  gallery?: { src: string; alt: string; label?: string }[];
   uses: string[];
   featured?: boolean;
 };
@@ -30,11 +31,14 @@ export const materials: Material[] = [
     name: "AISI / SAE 1018 - 1020",
     category: "Aceros grado maquinaria",
     badge: "Bajo carbono",
-    image: "/images/products/aisi-1018-1020.webp",
+    image: "/images/products/aceros-grado-maquinaria-wow.webp",
     intro: "Acero calibrado de bajo contenido de carbono para piezas de baja exigencia mecánica, fácil mecanizado y buena soldabilidad.",
     application: "Utilizado en maquinaria y piezas como ejes de baja potencia, tornillos, engranes, piñones y componentes que no estén sometidos a altos esfuerzos.",
     properties: "Baja dureza, buena maquinabilidad, soldabilidad favorable y comportamiento confiable para trabajos industriales de uso general.",
     presentations: ["Barras redondas", "Barras cuadradas", "Barras hexagonales", "Platinas calibradas", "Cortes a medida"],
+    gallery: [
+      { src: "/images/client-products/acero-barra-cuadrada-hexagonal-12l14.webp", alt: "Barras cuadradas y hexagonales de acero", label: "Presentación de barras calibradas" },
+    ],
     specs: [
       { label: "Dureza", value: "110 - 156 HB" },
       { label: "Esfuerzo de fluencia mín.", value: "27 kg/mm²" },
@@ -56,11 +60,14 @@ export const materials: Material[] = [
     name: "AISI / SAE 1045",
     category: "Aceros grado maquinaria",
     badge: "Media resistencia",
-    image: "/images/products/aisi-1045.webp",
+    image: "/images/client-products/acero-aisi-1045.webp",
     intro: "Acero grado ingeniería con nivel medio de resistencia, recomendado para elementos endurecidos y componentes de mayor exigencia.",
     application: "Usado en ejes, manivelas, chavetas, pernos, tuercas, cadenas, engranajes de baja velocidad, espárragos, acoplamientos, bielas, pasadores y cigüeñales.",
     properties: "Ofrece una combinación equilibrada de dureza, tenacidad y resistencia mecánica para piezas industriales de uso frecuente.",
     presentations: ["Barras redondas", "Cortes a medida", "Material completo o fraccionado"],
+    gallery: [
+      { src: "/images/client-products/acero-aisi-1045.webp", alt: "Barra AISI 1045", label: "Barra maciza AISI 1045" },
+    ],
     specs: [
       { label: "Dureza", value: "170 - 229 HB" },
       { label: "Esfuerzo de fluencia mín.", value: "40 kg/mm²" },
@@ -82,11 +89,14 @@ export const materials: Material[] = [
     name: "AISI / SAE 4140",
     category: "Aceros grado maquinaria",
     badge: "Alta tenacidad",
-    image: "/images/products/aisi-4140-4340.webp",
+    image: "/images/client-products/acero-aisi-4140.webp",
     intro: "Acero de baja aleación diseñado para piezas sometidas a esfuerzo, desgaste y fatiga.",
     application: "Se emplea en ejes, pasadores, cigüeñales, barras de torsión, engranajes, tuercas, pernos de gran esfuerzo, árboles de transmisión, émbolos, bielas y rotores.",
     properties: "Muy buena resistencia al desgaste, templabilidad, tenacidad y comportamiento superior frente a fatiga en componentes industriales.",
     presentations: ["Barras redondas", "Cortes de precisión", "Suministro para maquinado"],
+    gallery: [
+      { src: "/images/client-products/acero-aisi-4140.webp", alt: "Barra AISI 4140", label: "Barra maciza AISI 4140" },
+    ],
     specs: [
       { label: "Dureza estado bonificado", value: "260 - 320 HB" },
       { label: "Esfuerzo de fluencia mín.", value: "60 - 75 kg/mm²" },
@@ -107,11 +117,14 @@ export const materials: Material[] = [
     name: "AISI / SAE 4340",
     category: "Aceros grado maquinaria",
     badge: "Exigencia mecánica",
-    image: "/images/products/aisi-4140-4340.webp",
+    image: "/images/client-products/acero-aisi-4340.webp",
     intro: "Acero de baja aleación al cromo, níquel y molibdeno, ideal para componentes sometidos a grandes esfuerzos dinámicos.",
     application: "Recomendado para cigüeñales, ejes de levas, árboles de transmisión, barras de torsión, ejes, vástagos, poleas, barras de perforación, discos de freno, piñones, pernos y tuercas de alta exigencia.",
     properties: "Gran templabilidad, elevada tenacidad y alta resistencia a la fatiga para repuestos críticos y piezas de ingeniería.",
     presentations: ["Barras redondas", "Cortes según requerimiento", "Material para fabricación de repuestos"],
+    gallery: [
+      { src: "/images/client-products/acero-aisi-4340.webp", alt: "Barra AISI 4340", label: "Barra maciza AISI 4340" },
+    ],
     specs: [
       { label: "Dureza estado bonificado", value: "260 - 320 HRc" },
       { label: "Esfuerzo de fluencia", value: "65 - 80 kg/mm²" },
@@ -131,11 +144,14 @@ export const materials: Material[] = [
     name: "Barra hueca ST52",
     category: "Aceros grado maquinaria",
     badge: "Tubo mecánico",
-    image: "/images/products/barra-hueca-st52.webp",
+    image: "/images/client-products/acero-barra-hueca.webp",
     intro: "También conocida como Barra Sandvik o tubo mecánico, se usa para piezas con centro hueco y resistencia confiable.",
     application: "Aplicable en ejes huecos, árboles de transmisión, bujes, anillos, camisas, botellas, masas, manguitos y cilindros.",
     properties: "Acero al carbono con alto contenido de manganeso. Permite ahorro de material cuando la pieza requiere cavidad central.",
     presentations: ["Barra hueca", "Tubo mecánico", "Cortes a medida"],
+    gallery: [
+      { src: "/images/client-products/acero-barra-hueca.webp", alt: "Barra hueca ST52", label: "Tubo mecánico / barra hueca" },
+    ],
     specs: [
       { label: "Dureza", value: "125 HB" },
       { label: "Esfuerzo de fluencia mín.", value: "355 MPa" },
@@ -155,11 +171,19 @@ export const materials: Material[] = [
     name: "Acero inoxidable AISI 304",
     category: "Aceros inoxidables",
     badge: "Corrosión",
-    image: "/images/products/inox-304.webp",
+    image: "/images/client-products/inox-barra-304.webp",
     intro: "Acero inoxidable austenítico con buena resistencia a la corrosión, no templable y no magnético.",
     application: "Frecuente en industria alimenticia, marítima, química, farmacéutica, arquitectónica y estructural.",
     properties: "Aleado con cromo y níquel, bajo contenido de carbono, fácilmente trabajado en frío y soldable por distintos métodos excepto oxicorte.",
     presentations: ["Barras redondas", "Barras cuadradas", "Platinas", "Angulares", "Tubos redondos y cuadrados", "Láminas lisas y corrugadas"],
+    gallery: [
+      { src: "/images/client-products/inox-barra-304.webp", alt: "Barra inoxidable 304", label: "Barra inoxidable 304" },
+      { src: "/images/client-products/inox-tubo-redondo.webp", alt: "Tubo inoxidable redondo", label: "Tubo inoxidable redondo" },
+      { src: "/images/client-products/inox-tubo-cuadrado.webp", alt: "Tubo inoxidable cuadrado", label: "Tubo inoxidable cuadrado" },
+      { src: "/images/client-products/inox-platina.webp", alt: "Platina inoxidable", label: "Platina inoxidable" },
+      { src: "/images/client-products/inox-angular.webp", alt: "Angular inoxidable", label: "Angular inoxidable" },
+      { src: "/images/client-products/inox-lamina-lisa.webp", alt: "Lámina inoxidable lisa", label: "Lámina inoxidable lisa" },
+    ],
     specs: [
       { label: "Esfuerzo de fluencia mín.", value: "205 MPa" },
       { label: "Esfuerzo de tracción mín.", value: "515 MPa" },
@@ -180,11 +204,15 @@ export const materials: Material[] = [
     name: "Acero inoxidable AISI 316L",
     category: "Aceros inoxidables",
     badge: "Molibdeno",
-    image: "/images/products/inox-316l.webp",
+    image: "/images/client-products/inox-barra-316.webp",
     intro: "Inoxidable austenítico cromo-níquel con molibdeno, recomendado cuando se requiere mayor resistencia a corrosión y picaduras.",
     application: "Utilizado en petróleo y gas, equipos para alimentos, industria farmacéutica, minería e implantes médicos.",
     properties: "El contenido de molibdeno mejora la resistencia a picaduras en soluciones con cloruros y eleva el desempeño a temperaturas altas.",
     presentations: ["Barras", "Platinas", "Láminas", "Tubos", "Cortes a medida"],
+    gallery: [
+      { src: "/images/client-products/inox-barra-316.webp", alt: "Barra inoxidable 316L", label: "Barra inoxidable 316L" },
+      { src: "/images/client-products/inox-lamina-estriada.webp", alt: "Lámina inoxidable estriada", label: "Lámina inoxidable estriada" },
+    ],
     specs: [
       { label: "Esfuerzo de fluencia mín.", value: "290 MPa" },
       { label: "Esfuerzo de tracción mín.", value: "580 MPa" },
@@ -204,7 +232,7 @@ export const materials: Material[] = [
     name: "Láminas antidesgaste 450 / 500",
     category: "Antidesgaste",
     badge: "Alta abrasión",
-    image: "/images/products/laminas-antidesgaste-450-500.webp",
+    image: "/images/products/laminas-antidesgaste-wow.webp",
     intro: "Planchas antidesgaste para aplicaciones donde la abrasión, impacto y roce constante exigen mayor duración del material.",
     application: "Usadas en equipos de minería, movimiento de material, tolvas, cuchillas, revestimientos, máquinas agrícolas y piezas expuestas al desgaste.",
     properties: "Disponibles en cortes y medidas de acuerdo con la necesidad del cliente, orientadas a trabajos industriales de alto desgaste.",
@@ -223,11 +251,14 @@ export const materials: Material[] = [
     name: "Hierro fundido GG-25",
     category: "Aceros grado maquinaria",
     badge: "Fundición",
-    image: "/images/products/hierro-fundido-gg25.webp",
+    image: "/images/client-products/acero-hierro-fundido.webp",
     intro: "Hierro colado de amplio uso industrial para piezas con buena estabilidad y resistencia al desgaste.",
     application: "Usado en válvulas, bombas, tuberías y piezas automotrices.",
     properties: "Material ferroso con más de 2% de carbono y más de 1% de silicio; el carbono suele encontrarse como grafito en forma de hojuelas.",
     presentations: ["Barras redondas", "Cortes a medida", "Suministro para maquinado"],
+    gallery: [
+      { src: "/images/client-products/acero-hierro-fundido.webp", alt: "Hierro fundido GG-25", label: "Barra de hierro fundido" },
+    ],
     specs: [
       { label: "Dureza", value: "180 - 210 HB" },
       { label: "Esfuerzo de tensión mín.", value: "172 MPa" },
@@ -247,7 +278,7 @@ export const materials: Material[] = [
     name: "Aluminio 6061",
     category: "No ferrosos",
     badge: "Ligero",
-    image: "/images/products/aluminio-6061-new.webp",
+    image: "/images/products/aluminio-wow.webp",
     intro: "Aleación dúctil y ligera con gran resistencia, excelente acabado y buena resistencia a la corrosión.",
     application: "Ideal para piezas maquinadas con buen acabado superficial y trabajos que requieren facilidad de soldadura.",
     properties: "Contiene magnesio, silicio y aluminio como elementos principales. Una de las aleaciones más comunes para uso general.",
@@ -271,11 +302,15 @@ export const materials: Material[] = [
     name: "Bronce fosforoso C93200",
     category: "No ferrosos",
     badge: "Bujes",
-    image: "/images/products/bronces-industriales.webp",
+    image: "/images/client-products/bronce-fosforoso-solido.webp",
     intro: "Aleación de cobre, zinc, estaño y plomo, con bajo coeficiente de fricción y alta resistencia al desgaste.",
     application: "Especial para bujes y piezas sometidas a cargas.",
     properties: "Formado por colada continua, permite piezas con buenas propiedades mecánicas y disponibilidad en barras sólidas y huecas.",
     presentations: ["Barras sólidas", "Barras huecas", "Cortes a medida"],
+    gallery: [
+      { src: "/images/client-products/bronce-fosforoso-solido.webp", alt: "Bronce fosforoso sólido", label: "Bronce fosforoso sólido" },
+      { src: "/images/client-products/bronce-fosforoso-hueco.webp", alt: "Bronce fosforoso hueco", label: "Bronce fosforoso hueco" },
+    ],
     specs: [
       { label: "Límite elástico", value: ">120 MPa" },
       { label: "Esfuerzo de tracción", value: ">270 MPa" },
@@ -295,11 +330,15 @@ export const materials: Material[] = [
     name: "Bronce maleable C38500",
     category: "No ferrosos",
     badge: "Latón",
-    image: "/images/products/bronces-industriales.webp",
+    image: "/images/client-products/bronce-maleable.webp",
     intro: "También conocido como bronce latón, de alta ductilidad, resistencia a la corrosión y fácil mecanizado.",
     application: "Usado en aplicaciones decorativas, baja fricción, manijas, válvulas, fontanería, alambres, barras y perfiles.",
     properties: "Combina resistencia, ductilidad y buen comportamiento en máquinas y herramientas.",
     presentations: ["Barras", "Perfiles", "Cortes a medida"],
+    gallery: [
+      { src: "/images/client-products/bronce-maleable.webp", alt: "Bronce maleable", label: "Bronce maleable" },
+      { src: "/images/client-products/bronce-hexagonal.webp", alt: "Bronce hexagonal", label: "Barra hexagonal de bronce" },
+    ],
     specs: [
       { label: "Límite elástico", value: ">150 MPa" },
       { label: "Esfuerzo de tracción", value: ">360 MPa" },
@@ -318,11 +357,14 @@ export const materials: Material[] = [
     name: "Bronce aluminio C65500",
     category: "No ferrosos",
     badge: "Alta tracción",
-    image: "/images/products/bronces-industriales.webp",
+    image: "/images/client-products/bronce-aluminio.webp",
     intro: "Bronce con aluminio de alta resistencia mecánica y buena resistencia a corrosión atmosférica.",
     application: "Usado en piñones, cojinetes, coronas, engranes y piezas sometidas a desgaste e impacto.",
     properties: "Elevada tenacidad, alta resistencia a tracción, abrasión, desgaste, impacto y fatiga en altas y bajas temperaturas.",
     presentations: ["Barras", "Piezas para maquinado", "Cortes a medida"],
+    gallery: [
+      { src: "/images/client-products/bronce-aluminio.webp", alt: "Bronce aluminio", label: "Bronce aluminio" },
+    ],
     specs: [
       { label: "Límite elástico", value: ">300 MPa" },
       { label: "Esfuerzo de tracción", value: ">700 MPa" },
@@ -341,11 +383,15 @@ export const materials: Material[] = [
     name: "Nylon PA-6",
     category: "Plásticos de ingeniería",
     badge: "Poliamida",
-    image: "/images/products/plasticos-ingenieria-wow.webp",
+    image: "/images/client-products/nylon-barra-negra.webp",
     intro: "Termoplástico semicristalino de alta resistencia mecánica, buena resistencia al impacto y bajo peso específico.",
     application: "Usado en ruedas, engranes, poleas, piñones y piezas donde puede sustituir bronce, aluminio u otros metales no ferrosos.",
     properties: "Alta resistencia a abrasión e impacto. Puede absorber humedad, aumentando resistencia al impacto y vibraciones, con posibles cambios dimensionales.",
     presentations: ["Barras", "Láminas", "Cortes a medida"],
+    gallery: [
+      { src: "/images/client-products/nylon-barra-negra.webp", alt: "Barra de nylon negro", label: "Barra de nylon negro" },
+      { src: "/images/client-products/nylon-lamina-negra.webp", alt: "Lámina de nylon negra", label: "Lámina de nylon negra" },
+    ],
     specs: [
       { label: "Temperatura", value: "-18°C a +120°C" },
       { label: "Densidad", value: "1,15 gr/cm³" },
@@ -358,11 +404,15 @@ export const materials: Material[] = [
     name: "Teflón PTFE",
     category: "Plásticos de ingeniería",
     badge: "Baja fricción",
-    image: "/images/products/plasticos-ingenieria-wow.webp",
+    image: "/images/client-products/teflon-barra-blanca.webp",
     intro: "Politetrafluoroetileno de muy baja fricción, gran resistencia química y desempeño amplio en temperatura.",
     application: "Aplicable en industria química, aeroespacial, electrónica, automotriz, médica y piezas de deslizamiento.",
     properties: "Extremadamente resistente a ácidos, bases y solventes; ideal cuando se necesitan propiedades antiadherentes o baja fricción.",
     presentations: ["Barras redondas", "Cortes a medida", "Piezas para maquinado"],
+    gallery: [
+      { src: "/images/client-products/teflon-barra-blanca.webp", alt: "Barra de teflón PTFE", label: "Barra de teflón PTFE" },
+      { src: "/images/client-products/teflon-lamina-blanca.webp", alt: "Lámina de teflón PTFE", label: "Lámina de teflón PTFE" },
+    ],
     specs: [
       { label: "Temperatura", value: "-200°C a +260°C" },
       { label: "Densidad", value: "2,2 gr/cm³" },
