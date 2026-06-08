@@ -23,9 +23,9 @@ const families = [
     image: "/images/client-products/inox-barra-304.webp",
   },
   {
-    title: "Bronces y aleaciones no ferrosas",
-    text: "Bronce fosforoso, bronce maleable, bronce aluminio y otras opciones para bujes, cojinetes y piezas de fricción.",
-    image: "/images/client-products/bronce-aluminio.webp",
+    title: "Aluminio, bronces y no ferrosos",
+    text: "Aluminio 6061, bronce fosforoso, bronce maleable, bronce aluminio y otras opciones para piezas ligeras o de fricción.",
+    image: "/images/client-products/aluminio-barra-redonda.webp",
   },
   {
     title: "Plásticos de ingeniería",
