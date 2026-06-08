@@ -32,7 +32,7 @@ export function Preloader() {
               animate={{ rotate: [0, 0, 2, -2, 0], scale: [1, 1.03, 1] }}
               transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
             >
-              <Image src="/brand/logo-mark.svg" alt="Tecno Acero Panamá" width={82} height={82} priority />
+              <Image src="/brand/logo-tecno-acero-real-clean.png" alt="Tecno Acero Panamá" width={220} height={89} priority className="preloader-logo-img" />
             </motion.div>
             <div>
               <strong>TECNO ACERO PANAMÁ</strong>

@@ -437,11 +437,14 @@ export const materials: Material[] = [
     name: "Discos Pegatec",
     category: "Consumibles y corte",
     badge: "Corte y desbaste",
-    image: "/images/products/discos-pegatec-wow.webp",
+    image: "/images/products/discos-pegatec-real.webp",
     intro: "Discos multipropósito de alto rendimiento para corte y desbaste de materiales industriales.",
     application: "Corte y desbaste de acero, acero inoxidable, aluminio y perfiles como láminas, tubos, ángulos y platinas.",
     properties: "Fabricados por Wingking con tecnología alemana orientada a abrasivos de alta eficiencia y calidad.",
     presentations: ["Esmerilar 4.1/2 x 1/4 x 7/8", "Corte fino 4.1/2 x 1/24 x 7/8", "Corte 7 x 1/16 x 7/8", "Corte 9 x 5/64 x 7/8", "Corte 14 x 1/8 x 1", "Corte 16 x 1/8 x 1", "Segmentado 4.1/2 x 2.1 x 7/8"],
+    gallery: [
+      { src: "/images/products/discos-pegatec-real.webp", alt: "Discos Pegatec", label: "Discos de corte y desbaste Pegatec" },
+    ],
     specs: [
       { label: "Ventajas", value: "Larga duración y alta velocidad de corte" },
       { label: "Materiales", value: "Acero, inoxidable, aluminio, cobre, aleaciones, PVA, concreto y piedra" },

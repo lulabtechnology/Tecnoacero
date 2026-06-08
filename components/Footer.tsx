@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <Image src="/brand/logo-tecno-acero-clean-v2.png" alt="Tecno Acero Panamá" width={250} height={72} />
+          <Image src="/brand/logo-tecno-acero-real-clean.png" alt="Tecno Acero Panamá" width={250} height={102}  className="brand-logo-img" />
           <p>Soluciones industriales confiables en materiales ferrosos y no ferrosos, corte, asesoría técnica y entrega para el sector metalmecánico panameño.</p>
           <div className="footer-social">
             <a href={site.instagram} target="_blank" rel="noreferrer" aria-label="Instagram Tecno Acero Panamá"><Instagram size={18} /> {site.instagramLabel}</a>

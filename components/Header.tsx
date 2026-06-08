@@ -26,7 +26,7 @@ export function Header() {
     <header className={`site-header ${scrolled ? "is-scrolled" : ""}`}>
       <div className="container nav-shell">
         <Link href="/" className="brand-link" aria-label="Tecno Acero Panamá">
-          <Image src="/brand/logo-tecno-acero-clean-v2.png" alt="Tecno Acero Panamá" width={224} height={64} priority />
+          <Image src="/brand/logo-tecno-acero-real-clean.png" alt="Tecno Acero Panamá" width={165} height={67} priority className="brand-logo-img" />
         </Link>
 
         <nav className="desktop-nav" aria-label="Navegación principal">
